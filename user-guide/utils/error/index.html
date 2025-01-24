@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="http://127.0.0.1:8000/">
+        <link rel="canonical" href="http://127.0.0.1:8000/user-guide/utils/error/">
       
       
+        <link rel="prev" href="../circbuf/">
       
-        <link rel="next" href="maintainer-guide/">
+      
+        <link rel="next" href="../logger/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
     
     
       
-        <title>Home - Multi-Mission Flight Software - Documentation</title>
+        <title>ErrorHandler - Multi-Mission Flight Software - Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.a40c8224.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a40c8224.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,9 +54,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-the-terrapin-rocket-teams-multi-mission-flight-software-mmfs-documentation" class="md-skip">
+        <a href="#errorhandler" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +94,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Multi-Mission Flight Software - Documentation" class="md-header__button md-logo" aria-label="Multi-Mission Flight Software - Documentation" data-md-component="logo">
+    <a href="../../.." title="Multi-Mission Flight Software - Documentation" class="md-header__button md-logo" aria-label="Multi-Mission Flight Software - Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              ErrorHandler
             
           </span>
         </div>
@@ -191,11 +193,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="user-guide/intro/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../intro/" class="md-tabs__link">
           
   
   User Manual
@@ -213,7 +217,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="maintainer-guide/" class="md-tabs__link">
+        <a href="../../../maintainer-guide/" class="md-tabs__link">
           
   
   Maintainer Docs
@@ -235,8 +239,6 @@
           
             
               
-                
-              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -248,7 +250,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Multi-Mission Flight Software - Documentation" class="md-nav__button md-logo" aria-label="Multi-Mission Flight Software - Documentation" data-md-component="logo">
+    <a href="../../.." title="Multi-Mission Flight Software - Documentation" class="md-nav__button md-logo" aria-label="Multi-Mission Flight Software - Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -275,27 +277,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -306,7 +311,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             User Manual
@@ -320,7 +325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/intro/" class="md-nav__link">
+      <a href="../../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -341,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/installation/" class="md-nav__link">
+      <a href="../../installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -362,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/basic-use/" class="md-nav__link">
+      <a href="../../basic-use/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -380,27 +385,30 @@
                 
   
   
+    
   
   
+  
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
         
           
+          
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_4" >
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -411,7 +419,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_4">
             <span class="md-nav__icon md-icon"></span>
             Utilities
@@ -425,7 +433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/utils/blinkbuzz/" class="md-nav__link">
+      <a href="../blinkbuzz/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -446,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/utils/circbuf/" class="md-nav__link">
+      <a href="../circbuf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -464,10 +472,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="user-guide/utils/error/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -476,6 +493,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -488,7 +506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/utils/logger/" class="md-nav__link">
+      <a href="../logger/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -509,7 +527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/utils/math/" class="md-nav__link">
+      <a href="../math/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -530,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/utils/mmfssys/" class="md-nav__link">
+      <a href="../mmfssys/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -551,7 +569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/utils/test/" class="md-nav__link">
+      <a href="../test/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -585,10 +603,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -597,7 +618,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_5" >
         
           
-          <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -622,7 +643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/ifaces/actuator/" class="md-nav__link">
+      <a href="../../ifaces/actuator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -643,7 +664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/ifaces/data-reporter/" class="md-nav__link">
+      <a href="../../ifaces/data-reporter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -664,7 +685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/ifaces/event/" class="md-nav__link">
+      <a href="../../ifaces/event/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -685,7 +706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/ifaces/filters/" class="md-nav__link">
+      <a href="../../ifaces/filters/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -706,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/ifaces/sensor/" class="md-nav__link">
+      <a href="../../ifaces/sensor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -727,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/ifaces/state/" class="md-nav__link">
+      <a href="../../ifaces/state/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -790,7 +811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/ifaces/sensors/baro/" class="md-nav__link">
+      <a href="../../ifaces/sensors/baro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -811,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/ifaces/sensors/enc/" class="md-nav__link">
+      <a href="../../ifaces/sensors/enc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -832,7 +853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/ifaces/sensors/gps/" class="md-nav__link">
+      <a href="../../ifaces/sensors/gps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -853,7 +874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/ifaces/sensors/imu/" class="md-nav__link">
+      <a href="../../ifaces/sensors/imu/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -874,7 +895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/ifaces/sensors/light/" class="md-nav__link">
+      <a href="../../ifaces/sensors/light/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -895,7 +916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/ifaces/sensors/rtc/" class="md-nav__link">
+      <a href="../../ifaces/sensors/rtc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -932,7 +953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/adv-use/" class="md-nav__link">
+      <a href="../../adv-use/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -953,7 +974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/troubleshooting/" class="md-nav__link">
+      <a href="../../troubleshooting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -974,7 +995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/faq/" class="md-nav__link">
+      <a href="../../faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1044,7 +1065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maintainer-guide/" class="md-nav__link">
+      <a href="../../../maintainer-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1073,8 +1094,6 @@
             
             
               
-                
-              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1086,83 +1105,6 @@
   
     
   
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-mmfs" class="md-nav__link">
-    <span class="md-ellipsis">
-      🚀 What is MMFS?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#explore-the-docs" class="md-nav__link">
-    <span class="md-ellipsis">
-      📚 Explore the Docs
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📚 Explore the Docs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Getting Started
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-maintaining-mmfs" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Maintaining MMFS
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-miscellaneous-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Miscellaneous Resources
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#features-at-a-glance" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ Features at a Glance
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ready-to-start" class="md-nav__link">
-    <span class="md-ellipsis">
-      🌟 Ready to Start?
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1180,45 +1122,45 @@
   
 
 
-<p>This page written by ChatGPT. May not be accurate or helpful.</p>
-<h1 id="welcome-to-the-terrapin-rocket-teams-multi-mission-flight-software-mmfs-documentation">Welcome to the Terrapin Rocket Team's Multi-Mission Flight Software (MMFS) Documentation</h1>
-<p>Welcome to the (maybe) official documentation site for TRT's <strong>Multi-Mission Flight Software (MMFS)</strong>—the versatile and robust flight code framework developed by the Terrapin Rocket Team (TRT). Whether you're looking to integrate MMFS into your next mission, contribute to its ongoing development, or explore its unique capabilities, you've come to the right place!</p>
+<h1 id="errorhandler">ErrorHandler</h1>
+<p>The ErrorHandler class stores a list of all errors that have occurred. It's our solution to not being able to throw errors due to the memory overhead that standard errors incur. They are logged when they happen, and can be passed an integer (such as line number) to help with debugging.</p>
+<p>There is a global <code>errorHandler</code> object that can be used to log errors. To add an error to it, simply do
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;ErrorHandler.h&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="n">errorHandler</span><span class="p">.</span><span class="n">addError</span><span class="p">(</span><span class="n">ErrorType</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">line</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+Where <code>ErrorType</code> is an enum of the following:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">GENERIC_ERROR</span><span class="p">,</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="n">NONCRITICAL_WARNING</span><span class="p">,</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="n">SOFTWARE_ERROR</span><span class="p">,</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="n">HARDWARE_ERROR</span><span class="p">,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="n">CRITICAL_ERROR</span>
+</code></pre></div></td></tr></table></div>
+You can also use BlinkBuzz by appending a pin number and a <code>BBPattern</code><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> pointer to the end of the method call:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">errorHandler</span><span class="p">.</span><span class="n">addError</span><span class="p">(</span><span class="n">ErrorType</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">pin</span><span class="p">,</span><span class="w"> </span><span class="n">BBPattern</span><span class="w"> </span><span class="o">*</span><span class="n">pattern</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+This will cause the pattern to be played on the pin when the error is logged. This is useful for debugging, as you can use different patterns to indicate different errors.</p>
+<p>Finally, while the erros are logged at time of occurrence, if you need to print a list of them, you can call:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="n">errorHandler</span><span class="p">.</span><span class="n">printErrors</span><span class="p">();</span>
+</code></pre></div></td></tr></table></div></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Events have not yet been integrated with the error handler, so no event is fired when an error is logged.</p>
+</div>
+<div class="footnote">
 <hr />
-<h2 id="what-is-mmfs">🚀 What is MMFS?</h2>
-<p>MMFS is a modular and scalable flight software framework designed to meet the diverse needs of rocketry missions. Built with adaptability and reliability in mind, it provides a solid foundation for developing and deploying mission-critical systems. </p>
-<hr />
-<h2 id="explore-the-docs">📚 Explore the Docs</h2>
-<p>This documentation is organized into three main sections to help you navigate the MMFS ecosystem:</p>
-<h3 id="1-getting-started">1. <strong>Getting Started</strong></h3>
-<ul>
-<li>Learn how to install MMFS and set it up as your base flight code framework.</li>
-<li>Step-by-step guides for configuring MMFS to meet your mission's requirements.</li>
-<li>Code snippets and examples to help you hit the ground running.</li>
-</ul>
-<h3 id="2-maintaining-mmfs">2. <strong>Maintaining MMFS</strong></h3>
-<ul>
-<li>Dive into the internals of MMFS to understand its architecture and core principles.</li>
-<li>Learn best practices for maintaining and updating the library.</li>
-<li>Contribution guidelines for those looking to improve MMFS.</li>
-</ul>
-<h3 id="3-miscellaneous-resources">3. <strong>Miscellaneous Resources</strong></h3>
-<ul>
-<li>Additional tools and utilities to enhance your development experience.</li>
-<li>Tips, tricks, and advanced usage scenarios.</li>
-<li>Frequently asked questions and troubleshooting.</li>
-</ul>
-<hr />
-<h2 id="features-at-a-glance">✨ Features at a Glance</h2>
-<ul>
-<li><strong>Modularity:</strong> Pick and choose components to fit your mission's needs.</li>
-<li><strong>Scalability:</strong> From single-stage to multi-stage rockets, MMFS grows with your ambitions.</li>
-<li><strong>Open Source:</strong> Join a community of rocketry enthusiasts and contribute to the future of MMFS.</li>
-</ul>
-<hr />
-<h2 id="ready-to-start">🌟 Ready to Start?</h2>
-<p>Head over to the <a href="#">Getting Started</a> section to begin your journey with MMFS. If you're a seasoned developer or contributor, check out the <a href="#">Maintaining MMFS</a> section to dive deeper into the framework.</p>
-<p>Together, let's push the boundaries of rocketry innovation!</p>
-<hr />
+<ol>
+<li id="fn:1">
+<p><a href="../BlinkBuzz#bbpattern">BBPattern</a> from <a href="../BlinkBuzz">BlinkBuzz</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
@@ -1226,13 +1168,8 @@
 
 
 
-  
-  
 
 
-
-
-  
 
 
 
@@ -1281,24 +1218,39 @@
     
     
     
-    
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
 
         <!-- Link to previous page -->
+        
+        
+        <a href="../circbuf/" class="md-footer__link md-footer__link--prev"
+            aria-label="Previous: CircBuffer">
+            <div class="md-footer__button md-icon">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+                <span class="md-footer__direction">
+                    Previous
+                </span>
+                <div class="md-ellipsis">
+                    CircBuffer
+                </div>
+            </div>
+        </a>
         
 
         <!-- Link to next page -->
         
         
-        <a href="maintainer-guide/" class="md-footer__link md-footer__link--next"
-            aria-label="Next: Internal MMFS Maintenance Documentation">
+        <a href="../logger/" class="md-footer__link md-footer__link--next"
+            aria-label="Next: Logger">
             <div class="md-footer__title">
                 <span class="md-footer__direction">
                     Next
                 </span>
                 <div class="md-ellipsis">
-                    Internal MMFS Maintenance Documentation
+                    Logger
                 </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1350,10 +1302,10 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.instant", "navigation.top", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.sections", "navigation.path", "content.code.copy", "content.code.annotate", "header.autohide", "navigation.footer", "navigation.expand", "content.footnote.tooltips"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.top", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.sections", "navigation.path", "content.code.copy", "content.code.annotate", "header.autohide", "navigation.footer", "navigation.expand", "content.footnote.tooltips"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.60a45f97.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.60a45f97.min.js"></script>
       
     
   </body>
