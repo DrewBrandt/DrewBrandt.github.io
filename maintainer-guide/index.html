@@ -11,12 +11,12 @@
         <link rel="canonical" href="http://127.0.0.1:8000/maintainer-guide/">
       
       
-        <link rel="prev" href="../user-guide/ifaces/sensors/rtc/">
+        <link rel="prev" href="../user-guide/ifaces/sensors/light/">
       
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.a40c8224.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -35,7 +35,7 @@
   
   
   
-  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c-.5 0-1 .19-1.41.59l-8 8c-.79.78-.79 2.04 0 2.82l8 8c.78.79 2.04.79 2.82 0l8-8c.79-.78.79-2.04 0-2.82l-8-8C13 2.19 12.5 2 12 2m0 4.95c2.7.11 3.87 2.83 2.28 4.86-.42.5-1.09.83-1.43 1.26-.35.43-.35.93-.35 1.43H11c0-.85 0-1.56.35-2.06.33-.5 1-.8 1.42-1.13 1.23-1.13.91-2.72-.77-2.85-.82 0-1.5.67-1.5 1.51H9c0-1.67 1.35-3.02 3-3.02m-1 8.55h1.5V17H11z"/></svg>');}</style>
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%202c-.5%200-1%20.19-1.41.59l-8%208c-.79.78-.79%202.04%200%202.82l8%208c.78.79%202.04.79%202.82%200l8-8c.79-.78.79-2.04%200-2.82l-8-8C13%202.19%2012.5%202%2012%202m0%204.95c2.7.11%203.87%202.83%202.28%204.86-.42.5-1.09.83-1.43%201.26-.35.43-.35.93-.35%201.43H11c0-.85%200-1.56.35-2.06.33-.5%201-.8%201.42-1.13%201.23-1.13.91-2.72-.77-2.85-.82%200-1.5.67-1.5%201.51H9c0-1.67%201.35-3.02%203-3.02m-1%208.55h1.5V17H11z%22/%3E%3C/svg%3E');}</style>
 
 
     
@@ -124,11 +124,13 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -160,6 +162,7 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
@@ -192,11 +195,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../user-guide/intro/" class="md-tabs__link">
           
+  
   
   User Manual
 
@@ -209,6 +214,7 @@
         
   
   
+  
     
   
   
@@ -217,6 +223,7 @@
       <li class="md-tabs__item md-tabs__item--active">
         <a href="./" class="md-tabs__link">
           
+  
   
   Maintainer Docs
 
@@ -280,6 +287,7 @@
     
     
     
+    
       
       
         
@@ -298,8 +306,10 @@
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     User Manual
+    
   </span>
   
 
@@ -323,8 +333,10 @@
       <a href="../user-guide/intro/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Intro
+    
   </span>
   
 
@@ -344,8 +356,10 @@
       <a href="../user-guide/installation/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Installation
+    
   </span>
   
 
@@ -365,8 +379,10 @@
       <a href="../user-guide/basic-use/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Basic Usage
+    
   </span>
   
 
@@ -383,11 +399,13 @@
   
   
     <li class="md-nav__item">
-      <a href="../user-guide/adv-use/" class="md-nav__link">
+      <a href="../adv-use.md" class="md-nav__link">
         
+  
   
   <span class="md-ellipsis">
     Advanced Usage
+    
   </span>
   
 
@@ -407,8 +425,10 @@
       <a href="../user-guide/troubleshooting/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Troubleshooting
+    
   </span>
   
 
@@ -428,8 +448,10 @@
       <a href="../user-guide/faq/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     FAQ
+    
   </span>
   
 
@@ -445,6 +467,7 @@
   
   
   
+    
     
     
     
@@ -466,8 +489,10 @@
           <label class="md-nav__link" for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Utilities
+    
   </span>
   
 
@@ -491,8 +516,10 @@
       <a href="../user-guide/utils/blinkbuzz/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     BlinkBuzz
+    
   </span>
   
 
@@ -512,29 +539,10 @@
       <a href="../user-guide/utils/circbuf/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     CircBuffer
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../user-guide/utils/error/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ErrorHandler
+    
   </span>
   
 
@@ -554,8 +562,10 @@
       <a href="../user-guide/utils/logger/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Logger
+    
   </span>
   
 
@@ -575,8 +585,10 @@
       <a href="../user-guide/utils/math/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Math
+    
   </span>
   
 
@@ -596,8 +608,10 @@
       <a href="../user-guide/utils/mmfssys/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     MMFSSystem
+    
   </span>
   
 
@@ -617,8 +631,10 @@
       <a href="../user-guide/utils/test/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Test page
+    
   </span>
   
 
@@ -642,6 +658,7 @@
   
   
   
+    
     
     
     
@@ -663,8 +680,10 @@
           <label class="md-nav__link" for="__nav_1_8" id="__nav_1_8_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
     Interfaces
+    
   </span>
   
 
@@ -685,32 +704,13 @@
   
   
     <li class="md-nav__item">
-      <a href="../user-guide/ifaces/actuator/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Actuator
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../user-guide/ifaces/data-reporter/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     DataReporter
+    
   </span>
   
 
@@ -730,8 +730,10 @@
       <a href="../user-guide/ifaces/event/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Events
+    
   </span>
   
 
@@ -751,8 +753,10 @@
       <a href="../user-guide/ifaces/filters/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Filters
+    
   </span>
   
 
@@ -772,8 +776,10 @@
       <a href="../user-guide/ifaces/sensor/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Sensor
+    
   </span>
   
 
@@ -793,8 +799,10 @@
       <a href="../user-guide/ifaces/state/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     State
+    
   </span>
   
 
@@ -813,6 +821,7 @@
     
     
     
+    
       
       
         
@@ -825,22 +834,24 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_8_7" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_8_6" >
         
           
-          <label class="md-nav__link" for="__nav_1_8_7" id="__nav_1_8_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1_8_6" id="__nav_1_8_6_label" tabindex="0">
             
+  
   
   <span class="md-ellipsis">
     Sensors
+    
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_8_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_8_7">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_8_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_8_6">
             <span class="md-nav__icon md-icon"></span>
             Sensors
           </label>
@@ -856,8 +867,10 @@
       <a href="../user-guide/ifaces/sensors/baro/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Baro
+    
   </span>
   
 
@@ -877,8 +890,10 @@
       <a href="../user-guide/ifaces/sensors/enc/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Enc
+    
   </span>
   
 
@@ -898,8 +913,10 @@
       <a href="../user-guide/ifaces/sensors/gps/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Gps
+    
   </span>
   
 
@@ -919,8 +936,10 @@
       <a href="../user-guide/ifaces/sensors/imu/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     Imu
+    
   </span>
   
 
@@ -940,29 +959,10 @@
       <a href="../user-guide/ifaces/sensors/light/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
     LightSensor
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../user-guide/ifaces/sensors/rtc/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    RTC
+    
   </span>
   
 
@@ -1003,6 +1003,7 @@
   
   
   
+    
     
     
     
@@ -1025,8 +1026,10 @@
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
+  
   <span class="md-ellipsis">
     Maintainer Docs
+    
   </span>
   
 
@@ -1056,15 +1059,58 @@
         
       
       
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
   
   <span class="md-ellipsis">
     Internal MMFS Maintenance Documentation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Internal MMFS Maintenance Documentation
+    
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#maintaining-these-docs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maintaining these docs
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1098,6 +1144,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#maintaining-these-docs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maintaining these docs
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1110,12 +1173,20 @@
                 
                   
 
+
   
   
 
 
 <h1 id="internal-mmfs-maintenance-documentation">Internal MMFS Maintenance Documentation</h1>
-<p>This section not yet completed. Check back before 3/1/25 launch. Checkout the user guide in the meantime.</p>
+<p>This section not yet completed.</p>
+<h2 id="maintaining-these-docs">Maintaining these docs</h2>
+<ol>
+<li>die</li>
+<li>don't die</li>
+<li>??</li>
+<li>\$$</li>
+</ol>
 
 
 
@@ -1178,8 +1249,8 @@
         <!-- Link to previous page -->
         
         
-        <a href="../user-guide/ifaces/sensors/rtc/" class="md-footer__link md-footer__link--prev"
-            aria-label="Previous: RTC">
+        <a href="../user-guide/ifaces/sensors/light/" class="md-footer__link md-footer__link--prev"
+            aria-label="Previous: LightSensor">
             <div class="md-footer__button md-icon">
                 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1189,7 +1260,7 @@
                     Previous
                 </span>
                 <div class="md-ellipsis">
-                    RTC
+                    LightSensor
                 </div>
             </div>
         </a>
@@ -1215,7 +1286,7 @@
 </div>
 
             <div class="md-copyright">
-                Updated for MMFS version 3.0.0
+                Updated for MMFS version 3.1.0
             </div>
 
             <div class="md-copyright md-links">
@@ -1240,10 +1311,12 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.instant", "navigation.top", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.sections", "navigation.path", "content.code.copy", "content.code.annotate", "header.autohide", "navigation.footer", "navigation.expand", "content.footnote.tooltips"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.instant", "navigation.top", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.sections", "navigation.path", "content.code.copy", "content.code.annotate", "header.autohide", "navigation.footer", "navigation.expand", "content.footnote.tooltips"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.60a45f97.min.js"></script>
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
